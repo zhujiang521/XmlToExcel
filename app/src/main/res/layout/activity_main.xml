@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/mainBtnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="选择文件"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/mainTvFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:text="Uri：" />
+
+    <EditText
+        android:id="@+id/mainEtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入文件名称（默认为TestExcel）" />
+
+    <EditText
+        android:id="@+id/mainEtSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入表名称（默认为测试表1）" />
+
+    <Button
+        android:id="@+id/mainBtnParse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="转换为Excel"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
